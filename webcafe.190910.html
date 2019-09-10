@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>웹카페-HTML5,CSS3,웹표준,웹접근성</title>
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css"> -->
+    <link rel="stylesheet" href="./webcafe_190910.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="web cafe"></a></h1>
+        <ul class="member">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">english</a></li>
+        </ul>
+        <nav class="navigation">
+            <h2 class="a11y-hidden">메인 메뉴</h2>
+            <ul class="menu">
+                <li class="menu-item menu-act">
+                    <a href="#" class="btn-menu" role="button">HTML에 대해</a>
+                    <ul class="sub-menu sub-menu1">
+                        <li class="icon-dot-circled">
+                            <a href="#">HTML5 소개</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">레퍼런스 소개</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">활용예제</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn-menu" role="button">CSS에 대해</a>
+                    <ul class="sub-menu sub-menu2">
+                        <li class="icon-dot-circled">
+                            <a href="#">CSS 소개</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">CSS2 VS CSS3</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">CSS 애니메이션</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">CSS Framework</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn-menu" role="button">웹표준</a>
+                    <ul class="sub-menu sub-menu3">
+                        <li class="icon-dot-circled">
+                            <a href="#">웹표준 이란?</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">W3C</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">HTML5 현재와 미래</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn-menu" role="button">웹접근성</a>
+                    <ul class="sub-menu sub-menu4">
+                        <li class="icon-dot-circled">
+                            <a href="#">웹접근성의 개요</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">장애 환경의 이해</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">장차법</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">웹접근성 품질마크</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn-menu" role="button">묻고 답하기</a>
+                    <ul class="sub-menu sub-menu5">
+                        <li class="icon-dot-circled">
+                            <a href="#">묻고 답하기</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">1대1 질문</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">웹표준</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">웹접근성</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="btn-menu" role="button">자료실</a>
+                    <ul class="sub-menu sub-menu6">
+                        <li class="icon-dot-circled">
+                            <a href="#">공개 자료실</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">이미지 자료실</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">웹표준 자료실</a>
+                        </li>
+                        <li class="icon-dot-circled">
+                            <a href="#">웹접근성 자료실</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="visual">
+        <div class="visual-text">Web Standards &amp; Accessibility</div>
+    </div>
+
+    <!-- 표준 방식 -->
+    <main class="main-content">
+        <div class="group group1">
+            <section class="login">
+                <h2 class="login-heading">로그인</h2>
+                <form class="login-form" action="https://formspree.io/raccoonhj33@gmail.com" method="POST">
+                    <fieldset>
+                        <legend>회원 로그인 폼</legend>
+                        <div class="user-id">
+                            <label for="user-id">아이디</label>
+                            <input type="email" id="user-id" name="ID" required placeholder="이메일 주소">
+                        </div>
+                        <div class="user-pw">
+                            <label for="user-pw">비밀번호</label>
+                            <input type="password" id="user-pw" name="PW" required placeholder="8자리 이하">
+                        </div>
+                        <button class="login-btn" type="submit">로그인</button>
+                    </fieldset>
+                </form>
+                <ul class="sign">
+                    <li class="icon-angle-right"><a href="">회원가입</a></li>
+                    <li class="icon-angle-open"><a href="">아이디/비밀번호 찾기</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="group group2"></div>
+        <div class="group group3"></div>
+    </main>
+
+    <!-- 내 방식 -->
+    <!-- <main class="main">
+        <div class="main-content main-content1">
+            <section class="login">
+                <h2 class="title-login">로그인</h2>
+                <form method="POST" id="login-box" name="login" action="">
+                    <div class="login-id">
+                        <label for="loginId">아이디</label>
+                        <input type="text" id="id" name="loginId" placeholder="이메일 주소">
+                    </div>
+                    <div class="login-pwd">
+                        <label for="loginPwd">비밀번호</label>
+                        <input type="password" id="password" name="loginPwd" placeholder="8자리 이상">
+                    </div>
+                    <button class="login-btn">로그인</button>
+                </form>
+                <ul class="login-check">
+                    <li class="signin">회원가입</li>
+                    <li class="find">아이디/비밀번호 찾기</li>
+                </ul>
+            </section>
+            <section class="validation">
+                <h2 class="title-validation">Validation Link</h2>
+                <ul class="validation-list">
+                    <li class="validation-list-item">W3C Markup Validation</li>
+                    <li class="validation-list-item">CSS Validation Service</li>
+                </ul>
+            </section>
+            <section class="dictionary">
+                <h2 class="title-dictionary">웹 관련 용어</h2>
+                <div class="dictionary-detail">
+                    <img src="" alt="W3C">
+                    <dl>
+                        <dt>웹 표준 이란?</dt>
+                        <dd>W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은 ...</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        <div class="main-content main-content2">
+        </div>
+        <div class="main-content main-content3">
+        </div>
+    </main> -->
+
+    <article class="slogan">슬로건</article>
+    <div class="footer-bg">
+        <footer class="footer">푸터</footer>
+    </div>
+</body>
+
+</html>
