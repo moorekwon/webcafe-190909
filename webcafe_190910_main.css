@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+    margin: 0;
+    color: #181818;
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 400;
+    background-color: gray;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: 940px;
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* login section */
+
+.group1 {
+    width: 250px;
+}
+
+.group .group2 {
+    width: 380px;
+}
+
+.group .group3 {
+    width: 190px;
+}
+
+.login {
+    background: #ed8625 radial-gradient(circle at right top, #f7cc31, #ed8625);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 0 0 #666;
+}
+
+.login legend, .validation h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.login-heading {
+    margin: 0;
+    text-indent: 10px;
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.login-form {
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+    border: 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+
+.login-form label {
+    width: 4em;
+    display: inline-block;
+}
+
+/* 속성 선택자 사용 - '.login-form [type="email]' */
+.login-form input {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 6px;
+}
+
+.user-pw {
+    margin-top: 5px;
+}
+
+.login-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid orangered;
+    background: orange;
+    padding: 0;
+    color: #fff;
+    border-radius: 3px;
+    font: inherit;
+}
+
+.sign {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign li {
+    font-size: 1.3rem;
+}
+
+.sign li::before {
+    color: #ed8625;
+}
+
+/* validation section */
+.validation {
+
+}
+
+.validation a:hover {
+    background: pink;
+    color: red;
+}
+
+.validation-list {
+    padding-left: 10px;
+    list-style: none;
+    margin: 25px 0 20px 0;
+}
+
+.validation-list li {
+    margin: 10px 0;
+}
+
+.validation-list a {
+    background: url() no-repeat 20px 50%, linear-gradient(#ccc, #eee);
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    padding: 10px 0;
+}
+
+/* term section */
+.term {
+    background: #ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.term-heading {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.term-list {
+    background: red;
+    margin: 10px 0;
+}
+
+.term-list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.term-list-thumbnail, .term-list-brief {
+    margin: 0;
+}
+
+.term-list-subject, .term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list-subject {
+    background: darkgreen;
+    color: #296897;
+    margin: -2px 0 5px 0;
+}
+
+.term-list-thumbnail {
+    background: deeppink;
+    float: left;
+    width: 50px;
+}
+
+.term-list-thumbnail img {
+    vertical-align: top;
+}
+
+.term-list-brief {
+    background: burlywood;
+    line-height: 1.5;
+}
